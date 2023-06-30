@@ -48,7 +48,6 @@ func getdata(db *sqlx.DB, long, lat, distance float64, circle bool) ([]Result, e
 	}
 	//sort slice in ascertaining order by distance
 	sort.Slice(queryResult, func(i, j int) bool {
-		//change this
 		var a = queryResult[i].Distance
 		var b = queryResult[j].Distance
 		//but if distance < 50 sort descending by rating
