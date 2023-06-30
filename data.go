@@ -51,7 +51,7 @@ func getdata(db *sqlx.DB, long, lat, distance float64, circle bool) ([]Result, e
 		var a = queryResult[i].Distance
 		var b = queryResult[j].Distance
 		//but if distance < 50 sort descending by rating
-		if math.Abs(a-b) < 50 {
+		if math.Abs(a-b) < 50 && (a+b > 50) {
 			return queryResult[i].Rating.Float64 > queryResult[j].Rating.Float64
 		}
 		return queryResult[i].Distance < queryResult[j].Distance
