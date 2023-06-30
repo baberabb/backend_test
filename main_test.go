@@ -16,7 +16,7 @@ func SetUpRouter() *gin.Engine {
 }
 
 func TestHandler(t *testing.T) {
-
+	//testing sample request and checking if response is not empty
 	requestbody, err := json.Marshal(map[string]string{
 		"long":     "0.0747",
 		"lat":      "51.5250",
