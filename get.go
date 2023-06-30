@@ -22,7 +22,6 @@ func getHandler(c *gin.Context) {
 	sqlInfo := fmt.Sprintf("postgres://postgres:postgres@localhost/postgres?sslmode=disable")
 	db, err := sqlx.Connect("postgres", sqlInfo)
 	if err != nil {
-		fmt.Print(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
@@ -30,7 +29,6 @@ func getHandler(c *gin.Context) {
 	// Get data
 	results, err := getdata(db, long, lat, distance, circle)
 	if err != nil {
-		print(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
