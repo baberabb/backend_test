@@ -15,9 +15,9 @@ Allows searching for locations within a circular or square area.
 
 ## Example Requests
 
-Search within 100m of (-88.33, 36.33):
+- Search within 100m of (-88.33, 36.33):
 `/search?long=-88.33&lat=36.33&distance=100`
-Circular search within 200m:
+- Circular search within 200m:
 `/search?long=-88.33&lat=36.33&distance=200&circle=true`
 
 Response
