@@ -2,6 +2,8 @@
 
 This API allows searching for locations within a given radius of a longitude and latitude.
 
+[Video walkthrough](https://youtu.be/YFy0ZhSC3sk)
+
 ## Endpoints
 ### GET 
 Allows searching for locations within a circular or square area.
