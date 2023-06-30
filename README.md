@@ -22,7 +22,7 @@ Allows searching for locations within a circular or square area.
 
 Response
 
-Returns a JSON array of location objects, ordered by distance from the search origin (closest first), then by rating (highest first) for locations within 50m of each other.
+Returns a JSON array of location objects, ordered by distance from the search origin (closest first), then by rating (highest first) for locations within 50m of the query coordinates.
 
 A location object contains:
 
