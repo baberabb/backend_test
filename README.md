@@ -2,6 +2,8 @@
 
 This API allows searching for locations within a given radius of a longitude and latitude.
 
+The SQL query for task 1 is provided in `task1.txt`
+
 [Video walkthrough](https://youtu.be/YFy0ZhSC3sk)
 
 ## Endpoints
