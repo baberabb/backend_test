@@ -1,0 +1,8 @@
+Select name, domain, count
+From
+    (SELECT name, substring(website from '(?:.*://)?(?:www\.)?([^/?]*)') as domain,
+            count(substring(website from '(?:.*://)?(?:www\.)?([^/?]*)')) as count
+     From my_table
+     Group By domain, name
+    ) bb
+WHERE count > 1
